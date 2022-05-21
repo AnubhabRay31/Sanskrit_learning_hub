@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOME-page</title>
+    <link rel="stylesheet" href="CSS/main.css" />
+    <link rel="stylesheet" href="CSS/utils.css" />
+  </head>
+  <body class="fixed-bg_2">
+    <nav class="navbar">
+      <div class="logo">THE Sanskrit HUB</div>
+      <ul class="nav-list" id="nav-list">
+        <li class="list-item">
+          <a href="index.html" class="selected-page" style="color: darkgray"
+            >Home</a
+          >
+        </li>
+        <li class="list-item"><a href="awards.html">Awards</a></li>
+        <li class="list-item"><a href="gallery.html">Gallery</a></li>
+        <li class="list-item"><a href="experience.html">Experience</a></li>
+        <li class="list-item"><a href="contribution.html">Contributions</a></li>
+        <li class="list-item"><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <div class="menu" id="toggleButton">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+      </div>
+    </nav>
+
+    
+
+    <div class="index_logo centering">
+      <img src="IMAGES/index_logo.png" alt="" />
+    </div>
+
+    <div class="text_area">
+      <p style="margin: 0 0px;"> 
+        <strong>
+          <i>Translation : </i> 
+          <h3> One who is having these six qualities - knowledge, reasoning , wisdom,
+              sharp memory, preparedness and diligence, nothing is impossible for them.</h3>
+        </strong>
+      </p>
+     
+    </div>
+
+    <div class="centering">
+      <div class="photo-booth">
+        <div class="slider">
+          <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1" />
+            <input type="radio" name="radio-btn" id="radio2" />
+            <input type="radio" name="radio-btn" id="radio3" />
+            <input type="radio" name="radio-btn" id="radio4" />
+            <input type="radio" name="radio-btn" id="radio5" />
+
+            <div class="slide first">
+              <img src="IMAGES/best/best (1).jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="IMAGES/best/best (2).jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="IMAGES/best/best (3).jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="IMAGES/best/best (4).jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="IMAGES/best/best (5).jpg" alt="" />
+            </div>
+
+            <div class="navigation-auto">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+              <div class="auto-btn4"></div>
+              <div class="auto-btn5"></div>
+            </div>
+
+            <div class="navigation-manual">
+              <label for="radio1" class="manual-btn"></label>
+              <label for="radio2" class="manual-btn"></label>
+              <label for="radio3" class="manual-btn"></label>
+              <label for="radio4" class="manual-btn"></label>
+              <label for="radio5" class="manual-btn"></label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text_area centering_vertical" style="margin-top: -100px;">
+      <p>
+        <h1 class="my-heading">Objectives:</h1>
+        <ol>
+          <li>To bring Sanskrit language to the GLOBAL LEVEL</li>
+          <li>To highlight the scientific features of Sanskrit grammar, which makes this language amenable to computer.</li>
+          <li>To showcase the scientific inventions of Vedic era and connect it with modern inventions.</li>
+        </ol>
+      </p>
+    </div>
+
+    <div class="text_area">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit,
+      omnis! Quisquam qui numquam suscipit ullam. Laboriosam minus, voluptatem
+      quos illo totam eius? Nostrum voluptas illum facilis ex sequi? Eum,
+      molestias. Recusandae reiciendis, obcaecati accusantium enim consequuntur
+    </div>
+
+    <script>
+      var counter = 1;
+      setInterval(function () {
+        document.getElementById("radio" + counter).checked = true;
+        counter++;
+        if (counter > 5) {
+          counter = 1;
+        }
+      }, 3000);
+
+      const toggleButton = document.getElementById("toggleButton");
+      const navList = document.getElementById("nav-list");
+      toggleButton.addEventListener("click", () => {
+        navList.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

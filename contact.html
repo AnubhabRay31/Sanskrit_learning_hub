@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="CSS/main.css" />
+    <link rel="stylesheet" href="CSS/utils.css" />
+</head>
+<body class="fixed-bg_1">
+    <nav class="navbar">
+        <div class="logo">THE Sanskrit HUB</div>
+        <ul class="nav-list" id="nav-list">
+          <li class="list-item"><a href="index.html">Home</a></li>
+          <li class="list-item"><a href="awards.html">Awards</a></li>
+          <li class="list-item"><a href="gallery.html">Gallery</a></li>
+          <li class="list-item"><a href="experience.html">Experience</a></li>
+          <li class="list-item"><a href="contribution.html">Contributions</a></li>
+          <li class="list-item"><a href="contact.html" class="selected-page" style="color: darkgray;">Contact Us</a></li>
+        </ul>
+        <div class="menu" id="toggleButton">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+        </div>
+    </nav>
+    
+    <script>
+        const toggleButton = document.getElementById('toggleButton');
+        const navList = document.getElementById("nav-list");
+       toggleButton.addEventListener('click',()=>{
+           navList.classList.toggle('active');
+       })
+    </script>
+</body>
+</html>

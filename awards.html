@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awards-page</title>
+    <link rel="stylesheet" href="CSS/main.css" />
+    <link rel="stylesheet" href="CSS/utils.css" />
+</head>
+<body class="fixed-bg_1">
+    <nav class="navbar">
+        <div class="logo">THE Sanskrit HUB</div>
+        <ul class="nav-list" id="nav-list">
+          <li class="list-item"><a href="index.html">Home</a></li>
+          <li class="list-item"><a href="awards.html" class="selected-page" style="color: darkgray;">Awards</a></li>
+          <li class="list-item"><a href="gallery.html">Gallery</a></li>
+          <li class="list-item"><a href="experience.html">Experience</a></li>
+          <li class="list-item"><a href="contribution.html">Contributions</a></li>
+          <li class="list-item"><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="menu" id="toggleButton">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+        </div>
+    </nav>
+    
+    <div class="award_image centering">
+        <img src="IMAGEs/best/best (2).jpg" alt="">
+    </div>
+    <div class="centering">
+    <div class="text_area" style="font-size: 25px;">
+        <ol>
+            <li><p>Received British Council International School Award in the year 2017</p></li>
+            <li> <p>Received Best teacher award in the year 2008</p></li>
+            <li><p>Received Merit Certificate in M.A. in 1985</p></li>
+            <li><p>Secured 6th position in M.A. in 1985</p></li>
+        </ol>
+    </div>
+    </div>
+
+
+    <script>
+        const toggleButton = document.getElementById('toggleButton');
+        const navList = document.getElementById("nav-list");
+       toggleButton.addEventListener('click',()=>{
+           navList.classList.toggle('active');
+       })
+    </script>
+</body>
+</html>
