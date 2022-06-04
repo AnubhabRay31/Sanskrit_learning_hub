@@ -26,21 +26,21 @@
 }
 
 .image_text_area {
-  font-family: var(--font1);
-  font-size: larger;
+  font-family: var(--font_body);
+  font-size: 25px;
   color: white;
   margin: 0px 8%;
 }
 
 .text {
-  font-family: var(--font1);
-  font-size: larger;
+  font-family: var(--font_body);
+  font-size: 25px;
   color: white;
 }
 
 .text_area {
-  font-family: var(--font1);
-  font-size: larger;
+  font-family: var(--font_body);
+  font-size: 25px;
   color: white;
   margin: 50px;
 }
@@ -225,6 +225,12 @@
   border-radius: 30px;
 }
 
+.index_logo video{
+  width: 600px;
+  margin-top: 50px;
+  border: 3px solid white;
+  border-radius: 30px;
+}
 
 
 
