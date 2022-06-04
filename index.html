@@ -37,7 +37,7 @@
     </div>
 
     <div class="index_logo centering">
-      <video autoplay loop>
+      <video autoplay controls loop id="myvideo">
         <source src="VIDEO/logo.mp4" type="video/mp4">
       </video>
     </div>
@@ -118,6 +118,7 @@
     </div>
 
     <script>
+      document.getElementById('myvideo').play();
       var counter = 1;
       setInterval(function () {
         document.getElementById("radio" + counter).checked = true;
@@ -132,6 +133,8 @@
       toggleButton.addEventListener("click", () => {
         navList.classList.toggle("active");
       });
+
+      
     </script>
   </body>
 </html>
