@@ -32,6 +32,10 @@
   margin: 0px 8%;
 }
 
+.image_text_area strong{
+  font-size: 35px;
+}
+
 .text {
   font-family: var(--font_body);
   font-size: 25px;
